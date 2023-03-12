@@ -9,19 +9,19 @@ category: Python
 
 ### Lists (mutable)
 
-    list = []
+    list = []  # creates a list
     list[i:j]  # returns list subset
     list[-1]   # returns last element
     list[:-1]  # returns all but the last element
     *list      # expands all elements in place
     
-    list[i] = val
+    list[i] = val          # update ith element
     list[i:j] = otherlist  # replace ith to jth-1 elements with otherlist
     del list[i:j]
 
-    list.append(item)
-    list.extend(another_list)
-    list.insert(index, item)
+    list.append(item)          # add an element to the end of the list
+    list.extend(another_list)  # add multiple elements from an iterable at the end of a list
+    list.insert(index, item)   # add an element at a given position
     list.pop()        # returns and removes last element from the list
     list.pop(i)       # returns and removes i-th element from the list
     list.remove(i)    # removes the first item from the list whose value is i
